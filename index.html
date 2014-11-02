@@ -5,6 +5,7 @@
 <body>
 <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+ <script src="jquery.jsonp-2.1.4.min.js"></script>
         <script type="text/javascript" src="local-notification.js"></script>
         
     <script type="text/javascript">
@@ -48,28 +49,14 @@
             });
         function show() {
                     alert(3);
-
-function jsonp(url, callback) {
-   alert(55);
-
-    var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
-    window[callbackName] = function(data) {
-        delete window[callbackName];
-        document.body.removeChild(script);
-        callback(data);
-    };
-
-    var script = document.createElement('script');
-    script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
-    document.body.appendChild(script);
-}
-
-jsonp('http://crm.essentebilisim.com/api/timeline?new=2&count=1', function(response) {
-   alert(5);
-
-                    var len = response.length;
+$.jsonp({
+        url: 'http://crm.essentebilisim.com/api/timeline?new=2&count=1',
+        callbackParameter: 'callback',
+        success: function(response, status) {
+            var len = response.length;
                     for (var i = len - 1; i >= 0; i--) {
                         idx++;
+                        alert(111);
                         var now = new Date().getTime();
                         console.log(response[i]);
 
@@ -82,7 +69,15 @@ jsonp('http://crm.essentebilisim.com/api/timeline?new=2&count=1', function(respo
                         });
 
                     };
-});
+        },
+        error: function(){
+            $('#your-tweets').append('<li>There was an error loading the feed');
+        }
+
+    });
+
+
+
            
 
 
