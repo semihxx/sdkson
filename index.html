@@ -16,10 +16,10 @@
                function giris_yap() {
                   var xhr = new XMLHttpRequest();
 
-                  xhr.open("POST", web + "/crmlogin", true);
+                  xhr.open("POST", "http://crm.essentebilisim.com/crmlogin", true);
 
-                  var params = 'username=' + localStorage.adi + 
-                               '&password=' + localStorage.sifre;
+                  var params = 'username=semih@essentebilisim.com' 
+                               '&password=a';
                   params = params.replace(/%20/g, '+');
                   xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
                   xhr.onreadystatechange = function() {
@@ -44,10 +44,11 @@
                       // JSON.parse does not evaluate the attacker's scripts.
                       var resp = JSON.parse(xhr.responseText);
                       var len = resp.length;
-
+                      alert(2);
                       for (var i = len-1; i >= 0; i--) {
 idx++;
                         var now = new Date().getTime();
+                      alert(resp[i].prname);
 
                             window.plugin.notification.local.add({
                                 id:      idx,
