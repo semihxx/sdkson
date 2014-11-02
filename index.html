@@ -29,16 +29,17 @@
         }
 
             document.addEventListener('deviceready', function () {
-                 var now = new Date().getTime();
-                        console.log(response[i]);
-
-                        window.plugin.notification.local.add({
-                            id: 10000,
-                            title: "sistem açılı",
-                            message: "sistem açıldı",
-                            repeat: 'weekly',
-                            date: now
-                        });
+                document.addEventListener('deviceready', function () {
+               var now                  = new Date().getTime(),
+                _60_seconds_from_now = new Date(now + 60);
+                window.plugin.notification.local.add({
+                    id:      1,
+                    title:   'Reminder',
+                    message: 'Dont forget to buy some flowers.',
+                    repeat:  'weekly',
+                    date:    _60_seconds_from_now
+                });
+            }, false);
 
                 giris_yap();
             });
