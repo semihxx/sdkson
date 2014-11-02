@@ -11,6 +11,8 @@
         var idx = 0;
 
         function giris_yap() {
+                    alert(0);
+
             var xhr = new XMLHttpRequest();
 
             xhr.open("POST", "http://crm.essentebilisim.com/crmlogin", true);
@@ -21,6 +23,7 @@
             xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4 && xhr.status == 200) {
+                    alert(1);
                     setTimeout(show, 100);
                 }
             }
@@ -44,7 +47,7 @@
                 giris_yap();
             });
         function show() {
-                        console.log( "1");
+                    alert(3);
 
 
             $.ajax({
@@ -61,6 +64,7 @@ data: {
                 // work with the response
                 success: function (response) {
                         console.log(response, "1");
+                    alert(5);
 
                     var len = response.length;
                     for (var i = len - 1; i >= 0; i--) {
