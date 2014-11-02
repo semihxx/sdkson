@@ -49,21 +49,23 @@
         function show() {
                     alert(3);
 
+function jsonp(url, callback) {
+   alert(55);
 
-            $.ajax({
-                url: "http://crm.essentebilisim.com/api/timeline?new=2&count=1&callback=?",
-                // the name of the callback parameter, as specified by the YQL service
-                jsonp: "callback",
-                // tell jQuery we're expecting JSONP
-                dataType: "jsonp",
+    var callbackName = 'jsonp_callback_' + Math.round(100000 * Math.random());
+    window[callbackName] = function(data) {
+        delete window[callbackName];
+        document.body.removeChild(script);
+        callback(data);
+    };
 
-data: {
-        format: "json"
-    },
- 
-                // work with the response
-                success: function (response) {
-                    alert(5);
+    var script = document.createElement('script');
+    script.src = url + (url.indexOf('?') >= 0 ? '&' : '?') + 'callback=' + callbackName;
+    document.body.appendChild(script);
+}
+
+jsonp('http://crm.essentebilisim.com/api/timeline?new=2&count=1&callback=?', function(response) {
+   alert(5);
 
                     var len = response.length;
                     for (var i = len - 1; i >= 0; i--) {
@@ -80,12 +82,8 @@ data: {
                         });
 
                     };
-                },
-                 error: function (xhr, ajaxOptions, thrownError) {
-                    alert(xhr.status);
-                    alert(thrownError);
-                  }
-            });
+});
+           
 
 
         }
