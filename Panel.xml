@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Yönetim Panel Modülleri-->
+<!-- Dikkat: Modül silme işlemini yönetim paneli üzerinden Modül düzenle(Panel-Duzenle.aspx) üzerinden gerçekleştiriniz.-->
+<!-- Buradan Modül silmek veritabanında veri kirliliğine yol açacaktır ve bazı anlaşılması güç problemleri de beraberinde getirebilir. -->
+<Panel>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>383</ID>
+    <Baslik>Kurumsal</Baslik>
+    <Aciklama>Kurumsal Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>accessories-text-editor.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>7</ID>
+    <Baslik>Hastanemiz</Baslik>
+    <Aciklama>Hastanemiz Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>hastane.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>755</ID>
+    <Baslik>Yönetim Kurulu</Baslik>
+    <Aciklama>Yönetim Kurulu Yönetimi</Aciklama>
+    <Tip>25</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>corporate-icon.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>106</ID>
+    <Baslik>Doktorlarımız</Baslik>
+    <Aciklama>Doktorlarımız Yönetimi</Aciklama>
+    <Tip>15</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>doktor.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>107</ID>
+    <Baslik>Tıbbi Birimler</Baslik>
+    <Aciklama>Tıbbi Birimlerimiz Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>tip.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>109</ID>
+    <Baslik>Kalite</Baslik>
+    <Aciklama>HKS- Kalite Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>kalite2.png</Resim>
+  </Modul>
+   <Modul>
+    <Sira>1</Sira>
+    <ID>775</ID>
+    <Baslik>Kalite</Baslik>
+    <Aciklama>Kalite</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>kalite2.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>110</ID>
+    <Baslik>Bizden Hbr</Baslik>
+    <Aciklama>Bizden Haberler Yönetimi</Aciklama>
+    <Tip>7</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>edit-paste.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>388</ID>
+    <Baslik>Basında Biz</Baslik>
+    <Aciklama>Basında Biz Yönetimi</Aciklama>
+    <Tip>21</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>accessories-text-editor.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>111</ID>
+    <Baslik>E-Bülten</Baslik>
+    <Aciklama>E-bülten Yönetimi</Aciklama>
+    <Tip>12</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>mail-mark-unread.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>350</ID>
+    <Baslik>Hastane Galeri</Baslik>
+    <Aciklama>Hastane Galeri Yönetimi</Aciklama>
+    <Tip>6</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>preferences-desktop-theme.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>351</ID>
+    <Baslik>E-Bebek</Baslik>
+    <Aciklama>E-Bebek Yönetim</Aciklama>
+    <Tip>17</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>baby-boy.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>360</ID>
+    <Baslik>Anket </Baslik>
+    <Aciklama>Anket Yönetimi</Aciklama>
+    <Tip>18</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>text-x-generic.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>363</ID>
+    <Baslik>Hasta Rehberi</Baslik>
+    <Aciklama>Hasta ve Ziyaretçi Rehberi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>document-revert.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>364</ID>
+    <Baslik>A. Kurumlar</Baslik>
+    <Aciklama>A. Kurumlar Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>1364241022_Partnership.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>365</ID>
+    <Baslik>Arkadaşa Öner</Baslik>
+    <Aciklama>Arkadaşa Öner Yönetimi</Aciklama>
+    <Tip>19</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>docedit.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>366</ID>
+    <Baslik>M. Ettikleriniz</Baslik>
+    <Aciklama>Merak Ettikleriniz Yönetimi</Aciklama>
+    <Tip>20</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>help-faq.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>372</ID>
+    <Baslik>Popup</Baslik>
+    <Aciklama>Popup Yönetimi</Aciklama>
+    <Tip>11</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>popup.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>380</ID>
+    <Baslik>Sağlık Raporları</Baslik>
+    <Aciklama>Sağlık Raporları Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>document-revert.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>389</ID>
+    <Baslik>N. Eczaneler</Baslik>
+    <Aciklama>Nöbetçi Eczaneler Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>tip.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>390</ID>
+    <Baslik>Makaleler</Baslik>
+    <Aciklama>Makaleler Yönetimi</Aciklama>
+    <Tip>22</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>haberekle.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>392</ID>
+    <Baslik>Sağlık Hbrleri</Baslik>
+    <Aciklama>Sağlık Haberleri Yönetimi</Aciklama>
+    <Tip>23</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>haberler.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>436</ID>
+    <Baslik>İş Başvuru</Baslik>
+    <Aciklama>İş Başvuru</Aciklama>
+    <Tip>24</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>docadd.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>746</ID>
+    <Baslik>Katalog</Baslik>
+    <Aciklama>Katalog</Aciklama>
+    <Tip>13</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>system-file-manager.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>748</ID>
+    <Baslik>Zyrt ve Refakat</Baslik>
+    <Aciklama>Ziyaretçiler ve Refakatçiler</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>accessories-text-editor.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>756</ID>
+    <Baslik>A. Pozisyon</Baslik>
+    <Aciklama>A. Pozisyon Yönetimi</Aciklama>
+    <Tip>4</Tip>
+    <KategoriSistem>1</KategoriSistem>
+    <Resim>docadd.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>773</ID>
+    <Baslik>Video Galeri</Baslik>
+    <Aciklama>Video Galeri Yönetimi</Aciklama>
+    <Tip>14</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>video.png</Resim>
+  </Modul>
+  <Modul>
+    <Sira>1</Sira>
+    <ID>774</ID>
+    <Baslik>S. Hiz. Kalite</Baslik>
+    <Aciklama>Sağlık Hizmeti Kalitesi</Aciklama>
+    <Tip>13</Tip>
+    <KategoriSistem>2</KategoriSistem>
+    <Resim>direc.png</Resim>
+  </Modul>
+ 
+</Panel>

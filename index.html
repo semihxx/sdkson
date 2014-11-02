@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>com.PhoneGap.c2dm</title>
+    </head>
+    <body>
+        
+        <!--<script type="text/javascript" charset="utf-8" src="cordova-2.2.0.js"></script>-->
+        <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+        <script type="text/javascript" charset="utf-8" src="jquery_1.5.2.min.js"></script>
+        <script type="text/javascript" src="local-notification.js"></script>
+        
+        <script type="text/javascript">
+        var idx = 0;
+            document.addEventListener('deviceready', function () {
+               
+               function giris_yap() {
+                  var xhr = new XMLHttpRequest();
+
+                  xhr.open("POST", web + "/crmlogin", true);
+
+                  var params = 'username=' + localStorage.adi + 
+                               '&password=' + localStorage.sifre;
+                  params = params.replace(/%20/g, '+');
+                  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                  xhr.onreadystatechange = function() {
+                      if (xhr.readyState == 4 && xhr.status == 200) {
+                        setTimeout(show, 100);
+                      }
+                    }
+                  xhr.send(params);
+
+              }
+              giris_yap();
+            }, false);
+            function show() {
+              var xhr = new XMLHttpRequest();
+
+
+               xhr.open("GET",  "http://crm.essentebilisim.com/api/timeline/?new=2&count=1", true);
+
+                  xhr.onreadystatechange = function() {
+                    if (xhr.readyState == 4) {
+
+                      // JSON.parse does not evaluate the attacker's scripts.
+                      var resp = JSON.parse(xhr.responseText);
+                      var len = resp.length;
+
+                      for (var i = len-1; i >= 0; i--) {
+idx++;
+                        var now = new Date().getTime();
+
+                            window.plugin.notification.local.add({
+                                id:      idx,
+                                title:   resp[i].prname,
+                                message: resp[i].mission +"-"+ resp[i].pname,
+                                repeat:  'weekly',
+                                date:    now
+                            });
+
+                      };
+                      
+                    }
+                    setTimeout(show, 10000);
+                  }
+                xhr.send();
+            }
+
+
+
+         </script>
+		<div id="home">
+			<div id="app-status-div">
+				<ul id="app-status-ul">
+					<li>Cordova PushNotification Plugin Demo</li>
+				</ul>
+			</div>
+		</div>
+    </body>
+</html>
