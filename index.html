@@ -64,7 +64,7 @@ function jsonp(url, callback) {
     document.body.appendChild(script);
 }
 
-jsonp('http://crm.essentebilisim.com/api/timeline?new=2&count=1&callback=?', function(response) {
+jsonp('http://crm.essentebilisim.com/api/timeline?new=2&count=1', function(response) {
    alert(5);
 
                     var len = response.length;
